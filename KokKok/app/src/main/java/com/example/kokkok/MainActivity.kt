@@ -2,6 +2,7 @@ package com.example.kokkok
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.add(R.id.fragment_container, giftAddFragment())
+        transaction.add(R.id.fragment_container, AddGiftFragment())
         transaction.commit()
     }
 }
