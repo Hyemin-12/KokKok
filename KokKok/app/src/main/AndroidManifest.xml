@@ -14,7 +14,7 @@
         android:theme="@style/Theme.KokKok"
         tools:targetApi="31">
         <activity
-            android:name=".ProjectListFragment"
+            android:name=".GiftInfoActivity"
             android:exported="false" />
         <activity
             android:name=".NaviActivity"

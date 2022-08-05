@@ -1,8 +1,6 @@
 package com.example.kokkok
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,6 +16,7 @@ class ProjectListFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.project_list_fragment, container, false)
 
+        // recyclerView -> cardView를 목록으로 보여줌
         var recyclerView = view.findViewById<RecyclerView>(R.id.recyclerview) // recyclerview id
 
         var layoutManager = LinearLayoutManager(activity)

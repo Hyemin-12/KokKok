@@ -12,7 +12,11 @@ class MyPageFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.my_page_fragment, container, false)
+        val view = inflater.inflate(R.layout.my_page_fragment, container, false)
+
+        // 마이페이지 구현
+
+        return view
     }
 
 }

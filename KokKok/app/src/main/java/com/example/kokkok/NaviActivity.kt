@@ -22,18 +22,18 @@ class NaviActivity : AppCompatActivity(),
     private lateinit var binding: ActivityNaviBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
+        // 상단 액션바 숨기기
         supportActionBar?.hide()
 
         super.onCreate(savedInstanceState)
         binding = ActivityNaviBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+        // 아무것도 선택 안했을 때(메인) -> ProjectListFragment
         setFragment(TAG_LIST, ProjectListFragment())
 
         binding.navigationView.setOnItemSelectedListener { item ->
-
+            // 버튼 누르면 해당 Fragment로 이동
             when (item.itemId) {
                 R.id.project_list -> setFragment(TAG_LIST, ProjectListFragment())
                 R.id.add_project -> showPopup(binding.navigationView)
@@ -43,6 +43,7 @@ class NaviActivity : AppCompatActivity(),
         }
     }
 
+    // Fragment 이동 함수
     private fun setFragment(tag: String, fragment: Fragment) {
         val manager: FragmentManager = supportFragmentManager
         val fragTransaction = manager.beginTransaction()
@@ -55,6 +56,7 @@ class NaviActivity : AppCompatActivity(),
         val addProject = manager.findFragmentByTag(TAG_ADD)
         val myPage = manager.findFragmentByTag(TAG_MY_PAGE)
 
+        // 태그에 따라 Fragment 숨기고 보이도록 함
         if (projectList != null) {
             fragTransaction.hide(projectList)
         }
@@ -94,6 +96,7 @@ class NaviActivity : AppCompatActivity(),
 
     override fun onMenuItemClick(item: MenuItem?): Boolean {
         when (item?.itemId) { // 메뉴 아이템에 따라 동작 다르게 하기
+            // 팝업 메뉴에서 아이텝 클릭 시 해당 액티비티로 이동
             R.id.gift_menu -> {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)

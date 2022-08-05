@@ -19,7 +19,6 @@ class AddGiftFragment : Fragment() {
     private lateinit var imageView: ImageView
     val OPEN_CALLERY = 1
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -51,13 +50,15 @@ class AddGiftFragment : Fragment() {
             loadImage()
         }
 
-
+        // 방 공개 여부
         disclosureStatus.setOnCheckedChangeListener { radioGroup, i ->
             when(i) {
+                // 공개방이면 -> 비밀번호 입력창 안보이게
                  R.id.public_room-> {
                     passwordText.visibility = View.GONE
                     inputPassword.visibility = View.GONE
                 }
+                // 비공개면 -> 비밀번호 입력창 보이게
                 R.id.private_room -> {
                     passwordText.visibility = View.VISIBLE
                     inputPassword.visibility = View.VISIBLE
@@ -66,11 +67,13 @@ class AddGiftFragment : Fragment() {
             }
         }
 
+        // 캘린더 버튼 누르면 -> 날짜 선택 가능
         calendarButton.setOnClickListener() {
             //오늘 이후만 선택 가능
             val calendarConstraintBuilder = CalendarConstraints.Builder()
             calendarConstraintBuilder.setValidator(DateValidatorPointForward.now())
 
+            // 날짜 선택 화면 구현
             val builder = MaterialDatePicker.Builder.datePicker()
                 .setTitleText("날짜 선택")
                 .setSelection(MaterialDatePicker.todayInUtcMilliseconds())
@@ -78,6 +81,7 @@ class AddGiftFragment : Fragment() {
 
             val datePicker = builder.build()
 
+            // 날짜 선택 하면 expirationDate에 저장
             datePicker.addOnPositiveButtonClickListener {
                 val calendar = Calendar.getInstance()
                 calendar.time = Date(it)
@@ -86,6 +90,7 @@ class AddGiftFragment : Fragment() {
             datePicker.show(childFragmentManager, datePicker.toString())
         }
 
+        // 프로젝트 생성 버튼
         createButton.setOnClickListener {
             // 서버에 프로젝트 저장
 
@@ -98,6 +103,7 @@ class AddGiftFragment : Fragment() {
         return view
     }
 
+    // 이미지 업로드
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -115,6 +121,7 @@ class AddGiftFragment : Fragment() {
         }
     }
 
+    // 갤러리에서 이미지 불러오기
     private fun loadImage() {
         val photoPickerIntent = Intent(Intent.ACTION_PICK)
         photoPickerIntent.type = "image/*"
