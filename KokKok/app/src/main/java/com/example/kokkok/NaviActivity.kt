@@ -3,6 +3,7 @@ package com.example.kokkok
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Gravity
 import android.view.Menu
 import android.view.MenuItem
@@ -12,6 +13,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.example.kokkok.databinding.ActivityNaviBinding
+import com.google.android.material.tabs.TabLayout
 
 class NaviActivity : AppCompatActivity(),
     PopupMenu.OnMenuItemClickListener{
@@ -29,8 +31,8 @@ class NaviActivity : AppCompatActivity(),
         binding = ActivityNaviBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // 아무것도 선택 안했을 때(메인) -> ProjectListFragment
-        setFragment(TAG_LIST, ProjectListFragment())
+        // 아무것도 선택 안했을 때 -> ProjectListFragment
+         setFragment(TAG_LIST, ProjectListFragment())
 
         binding.navigationView.setOnItemSelectedListener { item ->
             // 버튼 누르면 해당 Fragment로 이동
@@ -41,6 +43,7 @@ class NaviActivity : AppCompatActivity(),
             }
             true
         }
+
     }
 
     // Fragment 이동 함수
@@ -96,12 +99,21 @@ class NaviActivity : AppCompatActivity(),
 
     override fun onMenuItemClick(item: MenuItem?): Boolean {
         when (item?.itemId) { // 메뉴 아이템에 따라 동작 다르게 하기
-            // 팝업 메뉴에서 아이텝 클릭 시 해당 액티비티로 이동
+            // 팝업 메뉴에서 아이텝 클릭 시 해당 프래그먼트로 이동
             R.id.gift_menu -> {
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
+                setContentView(R.layout.activity_main)
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.fragment_container, AddGiftFragment())
+                    .commit()
             }
-            R.id.delivery_menu -> Toast.makeText(this, "배달 추가 프래그먼트로 이동", Toast.LENGTH_LONG).show()
+            R.id.delivery_menu -> {
+                setContentView(R.layout.activity_main)
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.fragment_container, AddDeliveryFragment())
+                    .commit()
+            }
         }
 
         return item != null // 아이템이 null이 아닌 경우 true, null인 경우 false 리턴
