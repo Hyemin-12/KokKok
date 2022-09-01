@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:baseline="100dp"
+                android:src="@drawable/cat"
+                android:layout_marginTop="20dp"/>
+            <Button
+                android:id="@+id/back_img"
+                android:backgroundTint="#FFC7C8"
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="프로젝트 배경 추가"/>
+        </FrameLayout>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/name"
+            android:text="배달 가게 이름"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_text"
+            android:hint="배달 가게 이름을 입력하세요."
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/intro"
+            android:text="한 줄 소개"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/intro_text"
+            android:hint="프로젝트 내용을 입력하세요."
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/place"
+            android:text="배달 장소"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/place_text"
+            android:hint="배달을 받을 장소를 입력해주세요."
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/day_time"
+            android:text="프로젝트 날짜"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/day_text"
+                android:hint="배달 받을 날짜를 선택해주세요."
+                android:backgroundTint="#FFE2E2"
+                android:textSize="16sp"/>
+            <ImageButton
+                android:id="@+id/calander_btn"
+                android:src="@drawable/calendar"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:backgroundTint="#FFC7C8"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/time_text"
+                android:hint="배달 받을 시간을 선택해주세요."
+                android:textSize="16sp"/>
+            <ImageButton
+                android:id="@+id/time_btn"
+                android:src="@drawable/ic_baseline_access_time_24"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:backgroundTint="#FFC7C8"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/publicchoice"
+            android:text="방 공개 여부"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/radio_pirates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공개" />
+            <RadioButton
+                android:id="@+id/radio_ninjas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비공개" />
+        </RadioGroup>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/password"
+            android:text="비밀번호를 입력해주세요."
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_text"
+            android:hint="방의 비밀번호를 입력해주세요."
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/delivery_btn"
+            android:text="프로젝트 생성"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/pink"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</ScrollView>

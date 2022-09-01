@@ -3,17 +3,13 @@ package com.example.kokkok
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.Gravity
-import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.PopupMenu
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.example.kokkok.databinding.ActivityNaviBinding
-import com.google.android.material.tabs.TabLayout
 
 class NaviActivity : AppCompatActivity(),
     PopupMenu.OnMenuItemClickListener{
@@ -24,8 +20,6 @@ class NaviActivity : AppCompatActivity(),
     private lateinit var binding: ActivityNaviBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        // 상단 액션바 숨기기
-        supportActionBar?.hide()
 
         super.onCreate(savedInstanceState)
         binding = ActivityNaviBinding.inflate(layoutInflater)
@@ -52,7 +46,7 @@ class NaviActivity : AppCompatActivity(),
         val fragTransaction = manager.beginTransaction()
 
         if (manager.findFragmentByTag(tag) == null) {
-            fragTransaction.add(R.id.mainFrameLayout, fragment, tag)
+            fragTransaction.add(R.id.main_frame_layout, fragment, tag)
         }
 
         val projectList = manager.findFragmentByTag(TAG_LIST)
@@ -99,20 +93,14 @@ class NaviActivity : AppCompatActivity(),
 
     override fun onMenuItemClick(item: MenuItem?): Boolean {
         when (item?.itemId) { // 메뉴 아이템에 따라 동작 다르게 하기
-            // 팝업 메뉴에서 아이텝 클릭 시 해당 프래그먼트로 이동
+            // 팝업 메뉴에서 아이텝 클릭 시 해당 액티비티로 이동
             R.id.gift_menu -> {
-                setContentView(R.layout.activity_main)
-                supportFragmentManager
-                    .beginTransaction()
-                    .replace(R.id.fragment_container, AddGiftFragment())
-                    .commit()
+                val intent = Intent(this, AddGiftActivity::class.java)
+                startActivity(intent)
             }
             R.id.delivery_menu -> {
-                setContentView(R.layout.activity_main)
-                supportFragmentManager
-                    .beginTransaction()
-                    .replace(R.id.fragment_container, AddDeliveryFragment())
-                    .commit()
+                val intent = Intent(this, AddDeliveryActivity::class.java)
+                startActivity(intent)
             }
         }
 
