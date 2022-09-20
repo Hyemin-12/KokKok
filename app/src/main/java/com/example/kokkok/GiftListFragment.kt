@@ -16,10 +16,10 @@ class GiftListFragment : Fragment() {
         val view = inflater.inflate(R.layout.gift_list_fragment, container, false)
 
         // recyclerView -> cardView를 목록으로 보여줌
-        var recyclerView = view.findViewById<RecyclerView>(R.id.recyclerview) // recyclerview id
+        var recyclerView = view.findViewById<RecyclerView>(R.id.gift_recyclerview) // recyclerview id
         var layoutManager = LinearLayoutManager(activity)
         recyclerView.layoutManager = layoutManager
-        var adapter = MyAdapter()
+        var adapter = GiftAdapter()
         recyclerView.adapter = adapter
 
         return view

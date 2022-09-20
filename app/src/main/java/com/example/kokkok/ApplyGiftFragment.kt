@@ -12,7 +12,7 @@ class ApplyGiftFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.apply_gift_fragment, container, false)
+        val view = inflater.inflate(R.layout.apply_gift_activity, container, false)
 
         return view
     }
