@@ -42,7 +42,7 @@ class DeliveryAdapter(): RecyclerView.Adapter<DeliveryAdapter.MyViewHolder>(){
 
         holder.itemView.setOnClickListener {
             // 프로젝트 세부 사항 페이지로 이동
-            val intent = Intent(holder.itemView.context, GiftInfoActivity::class.java)
+            val intent = Intent(holder.itemView.context, DeliveryInfoActivity::class.java)
             holder.itemView.context.startActivity(intent)
         }
     }
