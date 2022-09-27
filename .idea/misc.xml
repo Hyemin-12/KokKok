@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/kokkok-youjin/KokKok/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.3645" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/kokkok-youjin/KokKok/app/src/main/res/drawable/ic_sharp_library_books_24.xml" value="0.3645" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/kokkok-youjin/KokKok/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/kokkok-youjin/KokKok/app/src/main/res/layout/activity_navi.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/kokkok-youjin/KokKok/app/src/main/res/layout/add_delivery_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/kokkok-youjin/KokKok/app/src/main/res/layout/add_gift_fragment.xml" value="0.1875" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/kokkok-youjin/KokKok/app/src/main/res/layout/apply_gift_fragment.xml" value="0.1875" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/kokkok-youjin/KokKok/app/src/main/res/layout/card_layout.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/kokkok-youjin/KokKok/app/src/main/res/layout/fragment_tabbed.xml" value="0.1875" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/kokkok-youjin/KokKok/app/src/main/res/layout/gift_add_fragment.xml" value="0.1875" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/kokkok-youjin/KokKok/app/src/main/res/layout/gift_apply_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/kokkok-youjin/KokKok/app/src/main/res/layout/gift_info_activity.xml" value="0.1875" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/kokkok-youjin/KokKok/app/src/main/res/layout/gift_list_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/kokkok-youjin/KokKok/app/src/main/res/layout/my_page_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/kokkok-youjin/KokKok/app/src/main/res/layout/project_list_fragment.xml" value="0.18" />
+        <entry key="..\:/Users/Mirim/AndroidStudioProjects/kokkok-youjin/KokKok/app/src/main/res/layout/project_mypage_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/drawable/menu_click_color.xml" value="0.2585" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/layout/activity_main.xml" value="0.359375" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/layout/activity_navi.xml" value="0.359375" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/layout/add_delivery_fragment.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/layout/add_gift_fragment.xml" value="0.359375" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/layout/add_project_fragment.xml" value="0.34479166666666666" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/layout/apply_gift_fragment.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/layout/card_layout.xml" value="0.35833333333333334" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/layout/fragment_tabbed.xml" value="0.35833333333333334" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/layout/gift_add_fragment.xml" value="0.26875" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/layout/gift_apply_fragment.xml" value="0.35833333333333334" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/layout/gift_info_fragment.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/layout/gift_list_fragment.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/layout/my_page_fragment.xml" value="0.34479166666666666" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/layout/project_list_activity.xml" value="0.16875" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/layout/project_list_fragment.xml" value="0.359375" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/menu/add_project_menu.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/chm48/AndroidStudioProjects/KokKok/app/src/main/res/menu/navi_menu.xml" value="0.359375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

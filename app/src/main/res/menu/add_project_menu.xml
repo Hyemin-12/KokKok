@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/gift_menu"
+        android:title="선물"/>
+
+    <item
+        android:id="@+id/delivery_menu"
+        android:title="배달"/>
+
+</menu>
