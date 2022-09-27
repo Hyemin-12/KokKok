@@ -36,7 +36,6 @@ class ProjectListFragment : Fragment() {
                 when(pos) {
                     // 0 -> 선물
                     0 -> {
-                        Log.d("mytag", "???")
                         childFragmentManager
                             .beginTransaction()
                             .replace(R.id.list_fragment, GiftListFragment())
@@ -44,7 +43,10 @@ class ProjectListFragment : Fragment() {
                     }
                     // 1 -> 배달
                     1 -> {
-                        Log.d("mytag", "뿡")
+                        childFragmentManager
+                            .beginTransaction()
+                            .replace(R.id.list_fragment, DeliveryListFragment())
+                            .commit()
                     }
                 }
             }

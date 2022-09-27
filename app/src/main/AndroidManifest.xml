@@ -17,6 +17,15 @@
             android:name=".GiftInfoActivity"
             android:exported="false" />
         <activity
+            android:name=".DeliveryInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddGiftActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddDeliveryActivity"
+            android:exported="false" />
+        <activity
             android:name=".NaviActivity"
             android:exported="true">
             <intent-filter>
