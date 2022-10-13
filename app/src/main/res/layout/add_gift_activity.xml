@@ -61,6 +61,7 @@
 
         <EditText
             android:id="@+id/input_amount"
+            android:inputType="number"
             android:hint="목표 금액을 입력해주세요"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -100,10 +101,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <EditText
-            android:id="@+id/input_participants"
-            android:hint="함께 참여할 인원의 수를 입력해주세요."
-            android:layout_width="match_parent"
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"/>
 
         <TextView

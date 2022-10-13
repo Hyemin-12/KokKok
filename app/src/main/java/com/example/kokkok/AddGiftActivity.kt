@@ -99,6 +99,20 @@ class AddGiftActivity : AppCompatActivity() {
             finish()
         }
 
+        // 목표 인원 Spinner
+        val spinner = findViewById<Spinner>(R.id.spinner)
+
+        val items = arrayOf(2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30)
+        val myAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, items)
+
+        spinner.adapter = myAdapter
+
+        spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+            }
+            override fun onNothingSelected(parent: AdapterView<*>) {
+            }
+        }
     }
 
     // 이미지 업로드
@@ -125,4 +139,5 @@ class AddGiftActivity : AppCompatActivity() {
         photoPickerIntent.type = "image/*"
         startActivityForResult(photoPickerIntent, OPEN_CALLERY)
     }
+
 }
