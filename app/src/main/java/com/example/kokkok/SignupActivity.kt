@@ -57,7 +57,7 @@ class SignupActivity : AppCompatActivity() {
                     return@setOnClickListener
                 }
             }
-            val newUser = RegisterModel(emailInput.text.toString(),pwInput.text.toString())
+            val newUser = RegisterModel(emailInput.text.toString(),pwInput.text.toString(), nameInput.text.toString())
             api.register(newUser).enqueue(object: retrofit2.Callback<RegisterResult>{
                 override fun onResponse(call: Call<RegisterResult>, response: Response<RegisterResult>) {
                     val result = response.body()?.message ?: return

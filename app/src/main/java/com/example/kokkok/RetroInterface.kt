@@ -23,26 +23,6 @@ interface RetroInterface{
     @GET("/users_info")
     fun allUser(): Call<ArrayList<User>>
 
-    @POST("/room")
-    fun createRoom(
-        @Body jsonparams: Room
-    ) : Call<RegisterResult>
-
-    @POST("/getRoom")
-    fun getRoom(
-        @Body jsonparams: Room
-    ) : Call<ArrayList<RoomNumber>>
-
-    @POST("/message")
-    fun sendMessage(
-        @Body jsonparams: Message
-    ) : Call<Message>
-
-    @POST("/getMessage")
-    fun getMessage(
-        @Body jsonparams: Room
-    ) : Call<ArrayList<Message>>
-
     @POST("/getUserId")
     fun getUserId(
         @Body jsonparams: LoginResult
