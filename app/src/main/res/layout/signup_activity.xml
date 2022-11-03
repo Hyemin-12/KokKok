@@ -97,7 +97,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"/>
 
-
     <Button
         android:id="@+id/complete_btn"
         android:text="가입하기"
