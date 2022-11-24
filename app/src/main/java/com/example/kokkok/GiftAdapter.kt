@@ -11,14 +11,14 @@ import androidx.recyclerview.widget.RecyclerView
 class GiftAdapter(): RecyclerView.Adapter<GiftAdapter.MyViewHolder>(){
 
     // 임시 cardView
-    var titles = arrayOf("선물1", "선물2", "선물3", "선물4", "선물5")
-    var details = arrayOf("Item one", "Item two", "Item three", "Item four", "Itme five")
+    var titles = arrayOf("\uD83D\uDC23유진이 생일선물 살 사람\uD83D\uDC23", "혜민 생일 D-7\uD83C\uDF82", "2-3 담임쌤 생신 선물\uD83C\uDF81", "비야 생선 살 사람 구함~!", "\uD83D\uDE4A부모님 어버이날 선물\uD83D\uDE4A")
+    var details = arrayOf("2명 / 5명\n13000원 / 68000원", "3명 / 6명\n30000원 / 60000원", "4명 / 12명\n40000원 / 120000원", "28명 / 30명\n280000원 / 300000원", "1명 / 3명\n33000원 / 100000원")
     var images = intArrayOf(
-        R.drawable.cat,
-        R.drawable.cat,
-        R.drawable.cat,
-        R.drawable.cat,
-        R.drawable.cat
+        R.drawable.youjin,
+        R.drawable.hyemin,
+        R.drawable.gd,
+        R.drawable.biya,
+        R.drawable.parents
     )
 
 

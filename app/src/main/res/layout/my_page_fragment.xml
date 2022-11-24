@@ -170,21 +170,21 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:src="@drawable/cat"
+                        android:src="@drawable/chicken"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:id="@+id/item_image1"
                         android:scaleType="centerCrop" />
 
                     <TextView
-                        android:text="제목"
+                        android:text="뿌링클 먹을 사람 구함~~~"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/item_title1"
-                        android:textSize="30sp" />
+                        android:textSize="20sp" />
 
                     <TextView
-                        android:text="현재인원"
+                        android:text="2명 / 4명\n최소주문금액 : 16000원~"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/item_detail1"/>
@@ -209,14 +209,14 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:src="@drawable/cat"
+                        android:src="@drawable/hyemin"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:id="@+id/item_image2"
                         android:scaleType="centerCrop" />
 
                     <TextView
-                        android:text="제목"
+                        android:text="혜민 생일 D-7\uD83C\uDF82"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/item_title2"
