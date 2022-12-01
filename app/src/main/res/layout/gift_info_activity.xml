@@ -15,14 +15,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp">
         <TextView
-            android:text="제목"
-            android:textSize="24sp"
+            android:text="🐣유진이 생일선물 살 사람🐣"
+            android:textSize="22sp"
             android:textStyle="bold"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
             android:layout_weight="8"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
         <ImageButton
             android:src="@drawable/ic_baseline_share_24"
             android:backgroundTint="@color/white"
@@ -35,67 +36,74 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
+    <View
+        android:layout_width="390dp"
+        android:layout_height="1.5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border"/>
+
     <TextView
-        android:text="설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명"
+        android:text="유진이 생일선물로 크록스 사줄거야!\n4월 11일이 생일이니까 8일까지 모아서 9일에 주문하장\n다들 빨리 참여해조~"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <View
+        android:layout_width="390dp"
+        android:layout_height="1.5dp"
+        android:layout_gravity="center"
         android:background="@drawable/border"/>
 
     <TextView
         android:text="현재 인원 수 / 총 인원 수"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
 
     <TextView
         android:text="2 / 5"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
 
     <TextView
         android:text="현재 금액 / 총 금액"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
 
     <TextView
-        android:text="12000 / 30000"
+        android:text="13000 / 68000"
+        android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
 
     <TextView
         android:text="~종료일"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
 
     <TextView
-        android:text="~ 2023.05.07"
+        android:text="~ 2023.04.08"
+        android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:text="댓글"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/border"/>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
 
     <Button
         android:text="신청하기"
-        android:backgroundTint="@color/pink"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="150dp"
         android:layout_marginBottom="20dp"
         android:layout_gravity="center"
         android:layout_width="250dp"

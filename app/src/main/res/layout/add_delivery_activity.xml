@@ -23,21 +23,24 @@
                 android:layout_marginTop="20dp"/>
             <Button
                 android:id="@+id/back_img"
-                android:backgroundTint="#FFC7C8"
+                android:backgroundTint="@color/white"
                 android:layout_width="200dp"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
-                android:text="프로젝트 배경 추가"/>
+                android:text="프로젝트 배경 추가"
+                android:textColor="@color/black"/>
         </FrameLayout>
         <TextView
             android:layout_marginTop="20dp"
             android:id="@+id/name"
             android:text="배달 가게 이름"
-            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <EditText
+            android:layout_marginTop="-10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/name_text"
@@ -46,10 +49,12 @@
         <TextView
             android:id="@+id/intro"
             android:text="한 줄 소개"
-            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <EditText
+            android:layout_marginTop="-10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/intro_text"
@@ -58,7 +63,8 @@
         <TextView
             android:id="@+id/place"
             android:text="배달 장소"
-            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <EditText
@@ -66,15 +72,19 @@
             android:layout_height="wrap_content"
             android:id="@+id/place_text"
             android:hint="배달을 받을 장소를 입력해주세요."
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:layout_marginTop="-10dp"/>
 
         <TextView
             android:id="@+id/day_time"
-            android:text="프로젝트 날짜"
-            android:textSize="18sp"
+            android:text="배달 일시"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <LinearLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -84,19 +94,28 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/day_text"
                 android:hint="배달 받을 날짜를 선택해주세요."
-                android:backgroundTint="#FFE2E2"
+                android:backgroundTint="@color/white"
+                android:layout_marginLeft="5dp"
                 android:textSize="16sp"/>
             <ImageButton
                 android:id="@+id/calander_btn"
                 android:src="@drawable/calendar"
+                android:layout_marginTop="-10dp"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:backgroundTint="#FFC7C8"/>
+                android:backgroundTint="@color/white"/>
         </LinearLayout>
+
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border"/>
         <LinearLayout
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -105,24 +124,32 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/time_text"
+                android:layout_marginLeft="5dp"
                 android:hint="배달 받을 시간을 선택해주세요."
                 android:textSize="16sp"/>
             <ImageButton
                 android:id="@+id/time_btn"
+                android:layout_marginTop="-10dp"
                 android:src="@drawable/ic_baseline_access_time_24"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:backgroundTint="#FFC7C8"/>
+                android:backgroundTint="@color/white"/>
         </LinearLayout>
-
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border"/>
         <TextView
             android:id="@+id/publicchoice"
             android:text="방 공개 여부"
-            android:textSize="18sp"
             android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
             android:layout_height="wrap_content"/>
         <RadioGroup
             android:id="@+id/radio_group"
@@ -143,10 +170,10 @@
         <TextView
             android:visibility="gone"
             android:id="@+id/password"
-            android:text="비밀번호를 입력해주세요."
-            android:textSize="18sp"
+            android:text="비밀번호"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"/>
         <EditText
             android:visibility="gone"
             android:layout_width="match_parent"
@@ -158,9 +185,11 @@
         <Button
             android:id="@+id/delivery_btn"
             android:text="프로젝트 생성"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/pink"
-            android:textColor="@color/black"/>
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/black"
+            android:layout_gravity="center"
+            android:textColor="@color/white"/>
     </LinearLayout>
 </ScrollView>

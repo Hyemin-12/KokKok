@@ -15,12 +15,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp">
         <TextView
-            android:text="제목"
-            android:textSize="24sp"
+            android:text="뿌링클 먹을 사람 구함~~~"
+            android:textSize="22sp"
             android:textStyle="bold"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
             android:layout_weight="8"
+            android:layout_margin="10dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"/>
         <ImageButton
@@ -35,52 +37,58 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
+
+    <View
+        android:layout_width="390dp"
+        android:layout_height="1.5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border"/>
+
+
     <TextView
-        android:text="설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명"
+        android:text="금요일밤엔 치킨을 먹어야지~!!"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"/>
+
+    <View
+        android:layout_width="390dp"
+        android:layout_height="1.5dp"
+        android:layout_gravity="center"
         android:background="@drawable/border"/>
 
     <TextView
         android:text="장소"
         android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <TextView
         android:text="미림분식"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
         android:layout_width="match_parent"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"/>
 
     <TextView
         android:text="~종료일"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <TextView
         android:text="~ 2023.05.07"
+        android:layout_marginLeft="5dp"
         android:layout_width="match_parent"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"/>
-
-    <TextView
-        android:text="댓글"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:background="@drawable/border"/>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
 
     <Button
         android:text="신청하기"
@@ -88,6 +96,9 @@
         android:layout_marginBottom="20dp"
         android:layout_gravity="center"
         android:layout_width="250dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="150dp"
+        android:background="@color/black"
         android:layout_height="60dp"/>
 
 </LinearLayout>

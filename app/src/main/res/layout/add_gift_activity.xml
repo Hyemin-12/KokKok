@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:backgroundTint="@color/pink"
+                android:backgroundTint="@color/white"
                 android:textColor="@color/black"/>
 
         </FrameLayout>
@@ -35,41 +35,53 @@
         <TextView
             android:text="제목"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"/>
 
         <EditText
             android:id="@+id/input_title"
             android:hint="제목을 입력해주세요."
+            android:layout_marginTop="-10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <TextView
             android:text="내용"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"/>
 
         <EditText
             android:id="@+id/input_content"
             android:hint="내용을 입력해주세요."
+            android:layout_marginTop="-10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <TextView
             android:text="목표 금액"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"/>
 
         <EditText
             android:id="@+id/input_amount"
             android:inputType="number"
             android:hint="목표 금액을 입력해주세요"
+            android:layout_marginTop="-10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <TextView
             android:text="날짜"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -82,24 +94,29 @@
                 android:layout_weight="9"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"/>
 
             <ImageButton
                 android:id="@+id/calander_btn"
                 android:src="@drawable/calendar"
                 android:layout_weight="1"
                 android:layout_width="0dp"
+                android:layout_marginTop="-10dp"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:backgroundTint="#FFC7C8"/>
+                android:backgroundTint="@color/white"/>
 
         </LinearLayout>
 
         <TextView
             android:text="목표 인원"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"/>
 
         <Spinner
             android:id="@+id/spinner"
@@ -110,7 +127,10 @@
         <TextView
             android:text="방 공개 여부"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"/>
 
         <RadioGroup
             android:id="@+id/disclosure_status"
@@ -133,7 +153,9 @@
             android:text="비밀번호"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/input_password"
@@ -145,9 +167,12 @@
         <Button
             android:id="@+id/create_btn"
             android:text="프로젝트 생성"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/pink"
-            android:textColor="@color/black"/>
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"/>
     </LinearLayout>
 </ScrollView>

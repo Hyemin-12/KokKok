@@ -181,13 +181,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/item_title1"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
 
                     <TextView
                         android:text="2명 / 4명\n최소주문금액 : 16000원~"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/item_detail1"/>
+                        android:id="@+id/item_detail1"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
