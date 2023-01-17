@@ -18,3 +18,11 @@
 | 6주차| ☑️ | ☑️ | 프로젝트 서버 구현 (로그인 기능 구현)   |
 | 7주차 | ☑️ | ☑️ | 프로젝트 서버 구현 mysql db 및 node.js 활용 완료  |
 | 8주차 | ☑️ | ☑️ | 프로젝트 수정 및 보완 (+ 디자인 수정) 완료 |
+
+<div style="maring: 0 auto">
+<img width=270 src="https://user-images.githubusercontent.com/85982818/212847352-e86e7f0e-e63d-4017-adef-a54b2e4ef28e.png"/>
+<img width=270 src="https://user-images.githubusercontent.com/85982818/212847425-ffab541f-6517-4adb-a183-d2526862594e.png"/>
+<img width=270 src="https://user-images.githubusercontent.com/85982818/212847418-ad4dca95-5e93-4a3d-99fb-ad1703a4586b.png"/>
+<img width=270 src="https://user-images.githubusercontent.com/85982818/212847329-6f5e9dfc-6476-4a8a-93b5-0bb166fe27e1.png"/>
+<img width=270 src="https://user-images.githubusercontent.com/85982818/212847343-190c69fc-0967-4e5b-b169-6313b52a6b5e.png"/>
+</div>
